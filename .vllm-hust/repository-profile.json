@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "canonical_registry": "https://github.com/vLLM-HUST/vllm-hust-docs/tree/codex/ecosystem-architecture-reorganization/registry",
+  "repository": "https://github.com/vLLM-HUST/cccf-domestic-inference-engine-survey",
+  "repository_role": "research_publication",
+  "relation_to_runtime": "adjacent_research",
+  "lifecycle": "community",
+  "artifacts": [
+    {
+      "id": "domestic-inference-engine-survey",
+      "artifact_type": "research_artifact",
+      "system_role": "research_publication",
+      "delivery_model": "source_repository",
+      "execution_planes": ["offline"],
+      "integration_contracts": []
+    }
+  ],
+  "system_boundaries": {
+    "is": ["a survey manuscript and its LaTeX publication artifacts"],
+    "is_not": [
+      "an inference engine implementation",
+      "a runtime plugin or platform profile",
+      "hardware or performance verification for systems discussed in the survey"
+    ]
+  },
+  "validation": ["make pdf", "git diff --check"],
+  "compatibility_document": "README.md"
+}
